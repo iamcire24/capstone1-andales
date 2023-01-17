@@ -31,7 +31,6 @@ nav div a {
 section {
 	width: 100vw;
 	width: 90vw;
-
 	padding-top: 150px;
 }
 
@@ -182,7 +181,7 @@ section {
   opacity:0.8;
 }
 
-.footer-basic ul a:hover {
+.footer-basic	 ul a:hover {
   opacity:1;
 }
 
