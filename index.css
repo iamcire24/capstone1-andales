@@ -133,8 +133,8 @@ section {
 	font-size: 50px;
 }
 
-#contact {
-	
+.modal-body {
+	background-color:#D1C9C2 ;
 }
 
 .card-title {
