@@ -8,12 +8,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Open+Sans&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<!-- Mobile Tag -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="./index.css">
+
+
 	<title>My Portfolio Website</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-secondary ">
+	<nav class="navbar navbar-expand-lg navbar-dark ">
 		<a class="navbar-brand name d-none d-sm-block" href="#home">Eric Andales</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -44,52 +49,173 @@
 
 	</section>
 
-	<section class="container-fluid pt-3 bg-white" id="about">
+
+	<section class="container-fluid pt-3 bg-white d-flex flex-column" id="about">
 		
-		<h1 class="text-center border border-dark rounded bg-secondary name-about">About Us</h1>
-			<!-- <div class="container-fluid d-flex flex-row">
-				<div class="container-fluid col-6">
-					<img src="image/home.jpg" class="img-fluid" width="400" height="600"> 
+		<h1 class="text-center border border-dark rounded  name-about">About Us</h1>
+
+		<div class="container-fluid card mb-3 mr-auto ">
+			<div class="row no-gutters">
+				<div class="col-md-4 myimage-div">
+					<img src="image/home.jpg" class="img-fluid myimage" width="400" height="700"> 
 				</div>
-				<div class="container-fluid col-6">
-					<h1 class="name-about">Eric Andales</h1>
-				</div>
-			</div> -->
-			<div class="container-fluid card mb-3 ">
-				<div class="row no-gutters">
-					<div class="col-md-4">
-						<img src="image/home.jpg" class="img-fluid" width="400" height="700"> 
+				<div class="col-md-8">
+					<div class="card-body-bio about-bio m-5">
+
+						<p class="card-text fstack ">BIO</p>
+						<p class="card-text"><small class="text-muted">Graduated at Mindanao State University - Institute of Technology with a degree in BS Information Technology Major in Databases. Have knowledge in Java, C, C++ and mobile development but mainly focuses on web development particulary Javascript.</small></p>
+						<p class="card-text"><small class="text-muted">Currently learning MERN stack.</small></p>
 					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							
-							<p class="card-text fstack ">BIO</p>
-							<p class="card-text"><small class="text-muted">Graduated at Mindanao State University - Institute of Technology with a degree in BS Information Technology Major in Databases. Have knowledge in Java, C, C++ and mobile development but mainly focuses on web development particulary Javascript.</small></p>
-							<p class="card-text"><small class="text-muted">Currently learning MERN stack.</small></p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="gallery" class="container-fluid d-flex flex-column pt-3">
+		<div >
+			<h1 class="text-center border border-dark rounded gallery bg-white">Gallery</h1>
+		</div>
+
+		<div class="container-fluid">
+			<h2 class="text-center myproject">My Projects</h2>
+		</div>
+		<div class="container-fluid card-deck">
+			<div class="card">
+				<img src="image/indigis1.png" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">IndiGIS - A Geographic Information System</h4>
+
+				</div>
+			</div>
+			<div class="card">
+				<img src="image/indigis2.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">IndiGIS - List of Users Page</h4>
+
+				</div>
+			</div>
+			<div class="card">
+				<img src="image/indigis3.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">IndiGIS - Chart</h4>
+
+				</div>
+			</div>
+			<div class="card">
+				<img src="image/indigis4.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">IndiGIS - Household Form</h4>
+
+				</div>
+			</div>
+
+		</div>
+		<div class="container-fluid card-deck mt-5 mb-5">
+			<div class="card">
+				<img src="image/invoice1.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">Invoicing System</h4>
+
+				</div>
+			</div>
+			<div class="card">
+				<img src="image/invoice2.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">Invoicing System - Delivery Info</h4>
+
+				</div>
+			</div>
+			<div class="card">
+				<img src="image/invoice3.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">Invoicing System - Form</h4>
+
+				</div>
+			</div>
+			<div class="card">
+				<img src="image/invoice4.png" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h4 class="card-title">Invoicing System - Invoice List</h4>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="contact" class="container-fluid pt-5 mb-5 bg-white">
+		<div class="container-fluid">
+			<h1 class="text-center border border-dark rounded  name-about">Contact</h1>
+		</div>
+		<div class="container-fluid  w-50 col-12 offset-md-2  col-md-8 offset-xl-4 col-xl-4 p-3">
+
+			<form class="form-me">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Name</label>
+					<input type="text" required class="form-control" id="name-form" aria-describedby="emailHelp" placeholder="Juan dela Cruz">
+
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Email Address</label>
+					<input type="email" class="form-control" id="email-form" placeholder="juandelacruz@gmail.com" required>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Contact Number</label>
+					<input type="number" class="form-control" id="contact-fomr" placeholder="09123456789">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Feedback/Message</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Send Email</button>
+
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header text-dark">
+								<h5 class="modal-title" id="exampleModalLabel">Message Sent</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body text-dark">
+								<h4>Thank You! </h4>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			
-		</section>
+			</form>
+		</div>
+	</div>
 
-		<section id="gallery" class="container-fluid  bg-secondary">
-			<div >
-				<h1>Gallery</h1>
-			</div>
+</section>
 
-		</section>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.facebook.com/cireseladna24" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="https://github.com/iamcire24" target="_blank"><i class="icon ion-social-github"></i></a><a href="https://www.reddit.com/user/iamcire95" target="_blank"><i class="icon ion-social-reddit"></i></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#home">Home</a></li>
+                <li class="list-inline-item"><a href="#about">About Us</a></li>
+                <li class="list-inline-item"><a href="#gallery">Gallery</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <p class="copyright">Eric Andales © 2023</p>
+        </footer>
+    </div>
 
-		<section id="contact" class="container-fluid pt-5 bg-white">
-			<div>
-				<h1>Contact</h1>
-			</div>
 
-		</section>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-	</body>
-	</html>
+</body>
+</html>
